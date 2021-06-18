@@ -3,6 +3,16 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": false,
         "source.fixAll.eslint": true,
-        "source.fixAll.format": true,
+        "source.fixAll.format": true
     },
+    "editor.formatOnSave": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "on",
+
+    "workbench.editor.revealIfOpen": true,
+
+    "files.eol": "\n",
+    "files.encoding": "utf8",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true
 }
