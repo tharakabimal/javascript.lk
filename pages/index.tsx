@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import HeroPost from '../components/hero-post';
+// import HeroPost from '../components/hero-post';
 
 const Home = () => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -16,7 +16,7 @@ const Home = () => (
                     Next.js!
                 </a>
             </h1>
-            <HeroPost />
+            {/* <HeroPost /> */}
             <p className="mt-3 text-2xl">
                 Get started by editing{' '}
                 <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">pages/index.js</code>
