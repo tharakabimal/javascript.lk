@@ -3,7 +3,7 @@
 
 # Check Prettier standards
 echo '• Checking for formatting issues ....'
-npm run check-format ||
+yarn check-format ||
 (
     echo 'Prettier Check Failed. Run yarn format, add changes and try commit again.';
     false;
@@ -11,32 +11,32 @@ npm run check-format ||
 echo 'No formatting issues found ✅
      '
 
-
 # Check ESLint Standards
 echo '• Checking for linting errors ....'
-npm run check-lint ||
+yarn check-lint ||
 (
         echo 'ESLint Check Failed. Make the required changes listed above and try to commit again.'
         false;
 )
-echo 'No linting errors found ✅'
-
+echo 'No linting errors found ✅
+     '
 
 # Check tsconfig standards
 echo '• Checking for ts errors ....'
-npm run check-types ||
+yarn check-types ||
 (
     echo 'Please make the changes required above.'
     false;
 )
-echo 'No ts errors found ✅'
+echo 'No ts errors found ✅
+     '
 
 # If everything passes... Now we can commit
 echo 'Everything looks good. Trying to build now...'
-npm run build ||
+yarn build ||
 (
-    echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
-            Next build failed: View the errors above to see why.
+    echo '❌❌❌❌ Your build failed successfully ❌❌❌❌
+            Next build failed: Check the errors above to see why.
     '
     false;
 )
