@@ -37,7 +37,7 @@ module.exports = {
     // Append the following snippet of code to avoid a bug where eslint not detecting the version of React 👇.
     settings: {
         react: {
-            version: 'latest',
+            version: 'detect',
         },
     },
 };
