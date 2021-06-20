@@ -13,7 +13,7 @@ type Props = {
 
 const Post = ({ post }: Props) => (
     <article className="mb-32">
-        <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} author={post.author} />
+        <PostHeader title={post.title} date={post.date} author={post.author} />
         <PostBody content={post.content} />
     </article>
 );
@@ -27,7 +27,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-    const post = getPostBySlug(params.slug, ['title', 'date', 'slug', 'author', 'content', 'ogImage', 'coverImage']);
+    const post = getPostBySlug(params.slug, ['title', 'date', 'slug', 'author', 'content', 'ogImage']);
     const content = await markdownToHtml(post.content || '');
 
     return {
