@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => (
-    <div>
+    <div className="max-w-3xl mx-auto">
         <Head>
             <title>JavaScript.lk</title>
             <link rel="icon" href="/favicon.ico" />
