@@ -14,17 +14,17 @@ type Props = {
 
 const PostPreview = ({ author, date, excerpt, slug, title }: Props) => (
     <div>
-        <h3 className="text-3xl mb-3 leading-snug">
+        <Avatar name={author.name} picture={author.picture} />
+        <h3 className="text-2xl mb-3 leading-snug text-left">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="hover:underline">{title}</a>
+                <a>{title}</a>
             </Link>
         </h3>
-        <div className="text-lg mb-4">
+        <p className="text-lg leading-relaxed mb-4 text-left">{excerpt}</p>
+        <div className="text-left text-gray-500 text-xs mb-4">
             <DateFormatter dateString={date} />
         </div>
-        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-        <Avatar name={author.name} picture={author.picture} />
     </div>
 );
 

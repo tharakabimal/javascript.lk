@@ -5,7 +5,7 @@ coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2019-01-01T05:35:07.322Z'
 author:
     name: Tharaka
-    picture: '/assets/blog/authors/tim.jpeg'
+    picture: '/assets/blog/authors/tharaka.jpg'
 ogImage:
     url: '/assets/blog/hello-world/cover.jpg'
 ---
