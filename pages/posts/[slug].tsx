@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Post = ({ post }: Props) => (
-    <article className="mb-32">
+    <article className="mt-16 mb-32">
         <PostHeader title={post.title} date={post.date} author={post.author} />
         <PostBody content={post.content} />
     </article>

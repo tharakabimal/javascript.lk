@@ -21,7 +21,7 @@ const PostPreview = ({ author, date, excerpt, slug, title }: Props) => (
                 <a>{title}</a>
             </Link>
         </h3>
-        <p className="leading-relaxed mb-4 text-left">{excerpt}</p>
+        <p className="leading-relaxed mb-4 text-left font-light">{excerpt}</p>
         <div className="text-left text-gray-500 text-xs mb-4">
             <DateFormatter dateString={date} />
         </div>
