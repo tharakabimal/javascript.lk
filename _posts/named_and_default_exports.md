@@ -1,13 +1,10 @@
 ---
 title: 'Understand the difference between default and named imports and exports.'
 excerpt: 'The default exports tend to be used for whatever you normally expect to get from the module. The named exports tend to be used for utilities that might be handy, but aren’t always necessary. However it is up to you to choose how to export things: for example, a module might have no default export at all.'
-coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2019-01-01T05:35:07.322Z'
 author:
     name: Tharaka
     picture: '/assets/blog/authors/tharaka.jpg'
-ogImage:
-    url: '/assets/blog/hello-world/cover.jpg'
 ---
 
 I just saw this discussion on default and named imports and exports when you are using ES6 modules. Though I'd just share it.

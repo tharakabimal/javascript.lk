@@ -6,9 +6,6 @@ type PostType = {
     date: string;
     author: Author;
     excerpt: string;
-    ogImage: {
-        url: string;
-    };
     content: string;
 };
 
