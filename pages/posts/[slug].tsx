@@ -7,8 +7,6 @@ import PostBody from '../../components/post-body';
 
 type Props = {
     post: PostType;
-    // morePosts: PostType[];
-    // preview?: boolean;
 };
 
 const Post = ({ post }: Props) => (

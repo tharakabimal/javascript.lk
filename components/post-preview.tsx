@@ -14,7 +14,9 @@ type Props = {
 
 const PostPreview = ({ author, date, excerpt, slug, title }: Props) => (
     <div className="mt-10 first:mt-0">
-        <Avatar name={author.name} picture={author.picture} />
+        <div className="mb-2">
+            <Avatar name={author.name} picture={author.picture} />
+        </div>
         <h3 className="text-xl font-semibold mb-3 leading-snug text-left">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
